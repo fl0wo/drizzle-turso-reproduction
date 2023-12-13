@@ -10,7 +10,7 @@
     "lib": [
       "es2019"
     ],
-    "module": "CommonJS",
+    "module": "commonjs",
     "noEmitOnError": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -23,16 +23,24 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "stripInternal": true,
-    "target": "ES2019"
+    "target": "ES2019",
+    "skipLibCheck": true,
+    "allowJs": true
   },
   "include": [
     ".projenrc.js",
     "src/**/*.ts",
     "test/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.json",
     ".projenrc.ts",
     "projenrc/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "node_modules",
+    "dist",
+    "src/**/.graphql"
   ]
 }
