@@ -39,7 +39,6 @@ describe('live tests', () => {
                 email: undefined
             }
 
-
             const idLikeUserToBeWithType = {
                 email: 'test@test.com',
                 name: 'Test User',
